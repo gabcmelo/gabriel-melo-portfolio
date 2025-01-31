@@ -1,11 +1,9 @@
-import HeaderNavigationBar from "@/components/header/HeaderNavigationBar";
-import Image from "next/image";
+import { HeroContent } from "@/components/HeroContent";
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
-      <HeaderNavigationBar />
-   
+    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <HeroContent />
     </div>
   );
 }
