@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import BackgroundBlurCircle from "@/components/BackgroundBlurCircle";
-
+import { Analytics } from "@vercel/analytics/react"
 export const metadata: Metadata = {
   title: "Gabriel Melo's Portfolio",
   description: "Portfolio of Gabriel Melo",
@@ -20,6 +20,7 @@ export default function RootLayout({
           {children}
         </div>
       </body>
+      <Analytics/>
     </html>
   );
 }
